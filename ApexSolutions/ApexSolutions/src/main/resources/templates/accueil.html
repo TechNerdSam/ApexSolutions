@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexSolutions | Landing page</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">ApexSolutions<span>.</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#features">Services</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#testimonials">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Révolutionnez Votre Entreprise Avec Nos Solutions Innovantes</h1>
+                    <p class="tagline">Des stratégies sur mesure pour un succès inégalé. Propulsez votre croissance dès aujourd'hui.</p>
+                    <a href="#contact" class="btn btn-primary">Découvrez Nos Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Nos Solutions Clés pour Votre Succès</h2>
+                <p class="section-subtitle">Nous vous accompagnons à chaque étape de votre développement.</p>
+                <div class="features-grid">
+                    <div class="feature-item reveal-on-scroll">
+                        <i class="fas fa-chart-line feature-icon"></i>
+                        <h3>Stratégie Digitale</h3>
+                        <p>Élaborez des plans numériques percutants pour atteindre vos objectifs.</p>
+                    </div>
+                    <div class="feature-item reveal-on-scroll">
+                        <i class="fas fa-desktop feature-icon"></i>
+                        <h3>Développement Web</h3>
+                        <p>Créez des plateformes web modernes, réactives et performantes.</p>
+                    </div>
+                    <div class="feature-item reveal-on-scroll">
+                        <i class="fas fa-bullhorn feature-icon"></i>
+                        <h3>Marketing Cible</h3>
+                        <p>Attirez et engagez votre audience avec des campagnes optimisées.</p>
+                    </div>
+                    <div class="feature-item reveal-on-scroll">
+                        <i class="fas fa-lightbulb feature-icon"></i>
+                        <h3>Innovation & R&D</h3>
+                        <p>Restez à la pointe avec nos solutions technologiques avancées.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section section-padding bg-light">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text reveal-on-scroll">
+                        <h2 class="section-title">Notre Histoire : Expertise & Passion</h2>
+                        <p>Chez ApexSolutions, nous sommes une équipe de professionnels passionnés, dédiés à l'innovation et à l'excellence. Forts de plusieurs années d'expérience, nous mettons notre savoir-faire au service de votre réussite. Notre approche est centrée sur le client, garantissant des solutions personnalisées qui répondent précisément à vos défis et aspirations.</p>
+                        <p>Nous croyons que chaque entreprise a un potentiel unique, et notre mission est de le révéler. De la conception stratégique à l'exécution technique, nous sommes votre partenaire de confiance.</p>
+                        <a href="#contact" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Ce Que Nos Clients Disent</h2>
+                <p class="section-subtitle">La satisfaction de nos partenaires est notre plus grande fierté.</p>
+                <div class="testimonials-grid">
+                    <div class="testimonial-item reveal-on-scroll">
+                        <p class="quote">"ApexSolutions a transformé notre présence en ligne. Leur expertise et leur réactivité sont inégalables. Nous avons vu des résultats concrets très rapidement."</p>
+                        <p class="client-name">- Jean Dupont, PDG de Alpha Corp</p>
+                    </div>
+                    <div class="testimonial-item reveal-on-scroll">
+                        <p class="quote">"Une équipe professionnelle et à l'écoute. Ils ont su comprendre nos besoins spécifiques et nous livrer une solution parfaite. Fortement recommandé !"</p>
+                        <p class="client-name">- Marie Curie, Directrice Marketing chez Beta Solutions</p>
+                    </div>
+                    <div class="testimonial-item reveal-on-scroll">
+                        <p class="quote">"Nous sommes ravis des services de ApexSolutions. Ils ont dépassé nos attentes à chaque étape du projet. Un vrai partenariat stratégique."</p>
+                        <p class="client-name">- Pierre Martin, Fondateur de Gamma Innovations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-padding bg-dark text-white">
+            <div class="container">
+                <h2 class="section-title text-white">Prêt à Démarrer Votre Projet ?</h2>
+                <p class="section-subtitle text-white">Contactez-nous dès aujourd'hui pour une consultation gratuite.</p>
+                <form class="contact-form" action="/submit-contact" method="post">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Votre Nom Complet" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre Adresse E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="6" placeholder="Votre Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Envoyer le Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col logo-col">
+                    <div class="logo">
+                        <a href="#">ApexSolutions<span>.</span></a>
+                    </div>
+                    <p class="tagline">Votre partenaire pour une croissance exponentielle.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="#features">Services</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Nous Suivre</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Innovation, 75001 Paris</p>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@apexsolutions.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ApexSolutions. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>
